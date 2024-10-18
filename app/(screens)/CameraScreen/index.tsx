@@ -11,7 +11,7 @@ export default function CameraScreen() {
     return <View />;
   }
 
-  // カメラ権限はまだ付与されていない
+  // カメラ権限がまだ付与されていない時に表示
   if (!permission.granted) {
     return (
       <View style={{ flex: 1, justifyContent: "center" }}>
