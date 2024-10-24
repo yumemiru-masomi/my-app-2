@@ -42,8 +42,12 @@ export default function NewScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>This is a New Screen!</Text>
-      <Button title="ローカル通知を送信" onPress={triggerLocalNotification} />
-      <Button title="Go Back" onPress={() => router.back()} />
+      <View style={styles.buttonContainer}>
+        <Button title="ローカル通知を送信" onPress={triggerLocalNotification} />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button title="Go Back" onPress={() => router.back()} />
+      </View>
     </View>
   );
 }
@@ -59,6 +63,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
+  },
+  buttonContainer: {
+    marginTop: 10,
   },
 });
 

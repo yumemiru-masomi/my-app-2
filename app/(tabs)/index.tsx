@@ -76,7 +76,17 @@ export default function HomeScreen() {
             router.push("/(screens)/CameraScreen");
           }}
         >
-          <Text style={styles.buttonText}>Camera</Text>
+          <Text style={styles.buttonText}>CameraScreen</Text>
+        </TouchableOpacity>
+      </ThemedView>
+      <ThemedView style={styles.buttonContainer}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => {
+            router.push("/(screens)/JotaiScreen");
+          }}
+        >
+          <Text style={styles.buttonText}>Jotai</Text>
         </TouchableOpacity>
       </ThemedView>
     </ParallaxScrollView>
